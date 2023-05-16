@@ -1,10 +1,10 @@
 <script setup>
-// import PocketBase from 'pocketbase'
+import PocketBase from 'pocketbase'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="" width="125" height="125" />
 
     <div>
       <label width="50px">Login : </label><input type="email" id="login">
