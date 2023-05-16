@@ -1,5 +1,6 @@
 <script setup>
-// import PocketBase from 'pocketbase'
+import PocketBase from 'pocketbase'
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
