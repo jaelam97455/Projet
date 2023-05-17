@@ -34,9 +34,8 @@ if (import.meta.env.MODE === 'production') // si production
 else // si developpement
   pocketbase_ip = 'http://127.0.0.1:8090'
 
-alert(pocketbase_ip)
 //connexion entre l'applciation et le serveur pocketbase
-const pb = new PocketBase('http://127.0.0.1:8090')
+const pb = new PocketBase(pocketbase_ip)
 export default {
   methods: {
     //this method allows a new user to sign up the system. Once done, the user receives an email
