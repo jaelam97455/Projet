@@ -1,5 +1,6 @@
 <script setup>
 import PocketBase from 'pocketbase'
+import HeaderPage from './components/HeaderPage.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import PocketBase from 'pocketbase'
       <p></p>
     </div>
   </header>
+  <HeaderPage/>
 
   <main>
     <!-- <TheWelcome /> -->
@@ -24,6 +26,7 @@ import PocketBase from 'pocketbase'
 </template>
 
 <script>
+
 // l'adresse du pocket base dépend de l'environnement d'exécution
 // si developpement (npm run run dev) alors l'adresse est http://127.0.0.1:8090
 // sinon si production (npm run build) alors l'adresse est http://193.168.146.158:80
