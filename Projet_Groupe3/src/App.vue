@@ -1,28 +1,24 @@
 <script setup>
 import PocketBase from 'pocketbase'
 import HeaderPage from './components/HeaderPage.vue'
+import FooterPage from './components/HeaderPage.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="" width="125" height="125" />
 
-    <div>
-      <label width="50px">Login : </label><input type="email" id="login">
-      <p></p>
-      <label width="50px">Password : </label><input type="password" id="passwd">
-      <p></p>
-      <hr>
-      <button v-on:click="register()">Register</button>
-      <button v-on:click="login()">Login</button>
-      <p></p>
-    </div>
+  <header>
+    <HeaderPage />
   </header>
-  <HeaderPage/>
+
 
   <main>
-    <!-- <TheWelcome /> -->
+
   </main>
+
+  <footer>
+    <FooterPage/>
+  </footer>
+
 </template>
 
 <script>
@@ -60,40 +56,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-label {
-  width: 100px;
-  display: inline-block;
-}
-
-button {
-  width: 150px;
-}
-
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
