@@ -1,5 +1,5 @@
 <template>
-<svg width="300" height="72" viewBox="0 0 300 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" viewBox="0 0 300 72" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_256_16447)">
 <mask id="mask0_256_16447" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="72">
 <path d="M300 0.449219H0V71.3484H300V0.449219Z" fill="white"/>
