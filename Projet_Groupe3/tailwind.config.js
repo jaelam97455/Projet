@@ -31,7 +31,10 @@ module.exports = {
         '5xl': '2.5rem', //40px = h-3,Bold & mobile-H1,Bold//
         '6xl': '3rem', //48px = h-2,Bold//
         '7xl': '6rem', //96px = h-1,Bold//
-       }
+       },
+      boxShadow: {
+        '1': '0px 4px 4px rgba(0, 0, 0, 0.25);',
+      }
   },
   plugins: [],
 };
