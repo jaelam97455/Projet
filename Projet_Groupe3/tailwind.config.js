@@ -34,7 +34,12 @@ module.exports = {
        },
       boxShadow: {
         '1': '0px 4px 4px rgba(0, 0, 0, 0.25);',
+      },
+      extend: {
+      gridTemplateColumns: {
+        principal: 'repeat(12, minmax(0, 64px))'
       }
+    }
   },
   plugins: [],
 };
