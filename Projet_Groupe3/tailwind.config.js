@@ -17,7 +17,7 @@ module.exports = {
         'darkgrey': '#818181',
       },
       fontFamily: {
-        serif: ['Amatic+SC', 'serif'],
+        serif: ['Amatic SC', 'serif'],
         sans: ['Oxygen', 'sans-serif']
       },
       fontSize: {
