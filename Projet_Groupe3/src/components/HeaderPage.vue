@@ -2,6 +2,7 @@
 import user from "./icons/user.vue";
 import shoppingBag from "./icons/shoppingBag.vue";
 import logoLong from "./icons/logoLong.vue";
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
