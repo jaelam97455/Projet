@@ -27,7 +27,7 @@ function closeMenu() {
       <nav aria-label="Site Nav"
         class="fixed inset-0 invisible w-screen h-screen text-2xl transition-all duration-300 ease-in-out bg-white opacity-0 lg:bg-opacity-0 md:block lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:opacity-100"
         :class="{ '!visible opacity-100': activeMenu }" v-scroll-lock="activeMenu">
-        <ul class="items-center gap-4 text-sm text-black lg:flex-row mt-[10vh] text-center lg:m-0 flex-col flex">
+        <ul class="items-center text-sm text-black lg:flex-row mt-[10vh] text-center lg:m-0 flex-col flex">
           <li class="menu-item">
             <RouterLink @click="closeMenu" class="menu-link" to="/"> Nos produits
             </RouterLink>
