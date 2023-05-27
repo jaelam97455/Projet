@@ -17,12 +17,5 @@ defineProps<{
                 class="px-4 py-2 text-white mt-14 rounded-xl hover:bg-lightgreen hover:text-white active:border-darkgreen active:border-4 bg-orange">
                 FAIRE MES COURSES</RouterLink>
         </div>
-
-
     </div>
 </template>
-
-
-
-
-
