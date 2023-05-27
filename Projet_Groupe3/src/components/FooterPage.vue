@@ -7,20 +7,8 @@ import instagram from '@/components/icons/instagram.vue'
 
 <template>
     <footer>
-
-        <div class="grid grid-cols-1 bg-darkgreen md:grid-cols-6">
-            <nav class="col-span-3 col-start-7 space-y-3">
-                <h4 class="font-bold text-black uppercase">Menu</h4>
-                <ul>
-                    <li class="text-black"><a href="#">Mentions légales</a></li>
-                    <li class="text-black"><a href="#">Contact et accès</a></li>
-                    <li class="text-black"><a href="#">Archives</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="grid items-center justify-center w-full grid-cols-1 gap-5 py-8 bg-brown md:grid-cols-2">
-            <div class="flex flex-row justify-center gap-8 md:flex-col">
+        <div class="w-full gap-5 py-8 bg-brown md:grid md:grid-cols-principal">
+            <div class="flex flex-row justify-center col-span-2 col-start-2 gap-4 md:flex-col md:gap-0">
                 <Logo />
                 <div class="gap-4 md:flex-col md:flex">
                     <div>
@@ -40,37 +28,34 @@ import instagram from '@/components/icons/instagram.vue'
                     </div>
                 </div>
             </div>
-            <nav class="grid grid-cols-4">
-                <div class="my-6">
-                    <h4 class="font-serif text-2xl text-center text-white">La cagette fermière</h4>
-                    <p class="font-sans text-sm text-center text-white">Nos produits</p>
-                    <p class="font-sans text-sm text-center text-white">Nos cagettes</p>
-                    <p class="font-sans text-sm text-center text-white">Faire un don de produits</p>
-                </div>
-
-                <div class="my-6">
-                    <h4 class="font-serif text-2xl text-center text-white">À propos</h4>
-                    <p class="font-sans text-sm text-center text-white">Qui sommes-nous</p>
-                    <p class="font-sans text-sm text-center text-white">Nos partenaires</p>
-                    <p class="font-sans text-sm text-center text-white">Nos producteurs</p>
-                </div>
-
-                <div class="my-6">
-                    <h4 class="font-serif text-2xl text-center text-white">Informations</h4>
-                    <p class="font-sans text-sm text-center text-white">Politique de confidentalité</p>
-                    <p class="font-sans text-sm text-center text-white">Utilisation des cookies</p>
-                    <p class="font-sans text-sm text-center text-white">Mentions légales</p>
-                </div>
-
-                <div class="my-6">
-                    <h4 class="font-serif text-2xl text-center text-white">Nous contacter</h4>
-                    <p class="font-sans text-sm text-center text-white">07 69 40 83 55</p>
-                    <p class="font-sans text-sm text-center text-white">lacagettefermiere@gmail.com</p>
-                </div>
-
+            <nav class="my-6 md:grid md:col-span-2 md:col-start-4">
+                <h4 class="font-serif text-2xl text-center text-white md:text-left">La cagette fermière</h4>
+                <p class="font-sans text-sm text-center text-white md:text-left">Nos produits</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">Nos cagettes</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">Faire un don de produits</p>
             </nav>
-        </div>
 
+            <nav class="my-6 md:grid md:col-span-2 md:col-start-6">
+                <h4 class="font-serif text-2xl text-center text-white md:text-left">À propos</h4>
+                <p class="font-sans text-sm text-center text-white md:text-left">Qui sommes-nous</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">Nos partenaires</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">Nos producteurs</p>
+            </nav>
+
+            <nav class="my-6 md:grid md:col-span-2 md:col-start-8">
+                <h4 class="font-serif text-2xl text-center text-white md:text-left">Informations</h4>
+                <p class="font-sans text-sm text-center text-white md:text-left">Politique de confidentalité</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">Utilisation des cookies</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">Mentions légales</p>
+            </nav>
+
+            <div class="my-6 md:grid md:col-span-2 md:col-start-10">
+                <h4 class="font-serif text-2xl text-center text-white md:text-left">Nous contacter</h4>
+                <p class="font-sans text-sm text-center text-white md:text-left">Téléphone ou mail</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">07 69 40 83 55</p>
+                <p class="font-sans text-sm text-center text-white md:text-left">lacagettefermiere@gmail.com</p>
+            </div>
+        </div>
     </footer>
 </template>
 
