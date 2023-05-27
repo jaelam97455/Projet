@@ -2,5 +2,6 @@
 import Hero from '@/components/hero.vue'
 </script>
 <template>
-    <Hero title="Agenda" imgPath="../../public/img/hero-pic.webp" imgAlt="Fruits et légumes" />
+    <Hero title="Prenez goût à l'anti-gaspi, 
+    faites des économies ! " imgPath="../../public/img/hero-pic-mobile.webp" imgAlt="Fruits et légumes" />
 </template>

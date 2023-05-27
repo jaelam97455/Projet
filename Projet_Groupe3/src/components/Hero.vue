@@ -8,15 +8,16 @@ defineProps<{
 </script>
 
 <template>
-    <div>
-        <div>
-            <h1>{{ title }}</h1>
-            <h2 v-if="subTitle">{{ subTitle }}</h2>
-        </div>
+    <div class="relative">
+        <img :src="imgPath" :alt="imgAlt" class="w-full h-auto">
 
-        <div>
-            Texte constituant le chapo de la page.
+        <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full">
+            <h1 class="px-5 text-5xl font-bold text-center text-darkgreen">{{ title }}</h1>
         </div>
-        <img :src="imgPath" :alt="imgAlt" />
     </div>
 </template>
+
+
+
+
+
