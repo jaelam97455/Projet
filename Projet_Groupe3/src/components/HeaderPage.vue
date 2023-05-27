@@ -45,12 +45,12 @@ function closeMenu() {
           </li>
           <li class="mt-10 menu-item">
             <RouterLink @click="closeMenu"
-              class="inline text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">S'inscrire
+              class="text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">S'inscrire
             </RouterLink>
           </li>
           <li class="menu-item">
             <RouterLink @click="closeMenu"
-              class="inline text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">Se
+              class="text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">Se
               connecter
             </RouterLink>
           </li>
