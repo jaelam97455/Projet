@@ -1,27 +1,21 @@
-<script setup>
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
 import PocketBase from 'pocketbase'
 import HeaderPage from './components/HeaderPage.vue'
 import FooterPage from './components/FooterPage.vue'
 </script>
 
 <template>
-
-  <header>
-    <HeaderPage />
-  </header>
-
+  <HeaderPage />
 
   <main>
-
+    <RouterView />
   </main>
 
-  <footer>
-    <FooterPage/>
-  </footer>
-
+  <FooterPage />
 </template>
 
-<script>
+<script lang="ts">
 
 // l'adresse du pocket base dépend de l'environnement d'exécution
 // si developpement (npm run run dev) alors l'adresse est http://127.0.0.1:8090
@@ -40,19 +34,18 @@ export default {
     //this method allows a new user to sign up the system. Once done, the user receives an email
     //asking for account validation. Once the validation made the user is added to the system
     async login() {
-      await pb.collection('users').authWithPassword(document.getElementById("login").value,
-        document.getElementById("passwd").value);
+      await pb.collection("users").authWithPassword(document.getElementById("login").value, document.getElementById("passwd").value);
     },
     //this method allows the already registred user to log in the system.
     async register() {
-      await pb.collection('users').create({
+      await pb.collection("users").create({
         email: document.getElementById("login").value,
         password: document.getElementById("passwd").value,
         passwordConfirm: document.getElementById("passwd").value,
-        name: 'John Di',
+        name: "John Di",
       });
     }
-
-  }
+  },
+  components: { HeaderPage, FooterPage }
 }
 </script>
