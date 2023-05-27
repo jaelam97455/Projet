@@ -7,6 +7,10 @@ import { RouterLink } from 'vue-router'
 
 const activeMenu = ref(false)
 
+function closeMenu() {
+  activeMenu.value = false
+}
+
 </script>
 
 <template>
@@ -20,19 +24,19 @@ const activeMenu = ref(false)
     <div class="flex items-center justify-end flex-1 gap-10">
       <nav aria-label="Site Nav"
         class="fixed inset-0 invisible hidden w-screen h-screen text-2xl transition-all duration-300 ease-in-out opacity-0 md:block bg-indigo"
-        :class="{ '!visible opacity-100': activeMenu }">
+        :class="{ '!visible opacity-100': activeMenu }" v-scroll-lock="activeMenu">
         <ul class="items-center hidden gap-6 text-sm text-gray-500 lg:flex mt-[25vh] ml-16">
           <li>
-            <RouterLink class="transition hover:text-gray-700" to="/"> Nos produits </RouterLink>
+            <RouterLink @click="closeMenu" class="transition hover:text-gray-700" to="/"> Nos produits </RouterLink>
           </li>
           <li>
-            <RouterLink class="transition hover:text-gray-700" to="/"> Nos cagettes </RouterLink>
+            <RouterLink @click="closeMenu" class="transition hover:text-gray-700" to="/"> Nos cagettes </RouterLink>
           </li>
           <li>
-            <RouterLink class="transition hover:text-gray-700" to="/">Déposer des produits</RouterLink>
+            <RouterLink @click="closeMenu" class="transition hover:text-gray-700" to="/">Déposer des produits</RouterLink>
           </li>
           <li>
-            <RouterLink class="transition hover:text-gray-700" to="/"> À propos </RouterLink>
+            <RouterLink @click="closeMenu" class="transition hover:text-gray-700" to="/"> À propos </RouterLink>
           </li>
         </ul>
       </nav>
