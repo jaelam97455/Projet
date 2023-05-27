@@ -15,9 +15,7 @@ import FooterPage from './components/FooterPage.vue'
   <FooterPage />
 </template>
 
-</template>
-
-<script>
+<script lang="ts">
 
 // l'adresse du pocket base dépend de l'environnement d'exécution
 // si developpement (npm run run dev) alors l'adresse est http://127.0.0.1:8090

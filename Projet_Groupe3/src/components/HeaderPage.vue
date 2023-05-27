@@ -9,21 +9,20 @@ import { RouterLink } from 'vue-router'
   <header aria-label="Header" class="mt-5 bg-white">
     <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto md:px-6 lg:px-8">
       <logoLong />
-
       <div class="flex items-center justify-end flex-1 gap-10">
         <nav aria-label="Site Nav" class="hidden md:block">
           <ul class="items-center hidden gap-6 text-sm text-gray-500 lg:flex">
             <li>
-              <a class="transition hover:text-gray-700" href="/"> Nos produits </a>
+              <RouterLink class="transition hover:text-gray-700" to="/"> Nos produits </RouterLink>
             </li>
             <li>
-              <a class="transition hover:text-gray-700" href="/"> Nos cagettes </a>
+              <RouterLink class="transition hover:text-gray-700" to="/"> Nos cagettes </RouterLink>
             </li>
             <li>
-              <a class="transition hover:text-gray-700" href="/"> Déposer des produits </a>
+              <RouterLink class="transition hover:text-gray-700" to="/">Déposer des produits</RouterLink>
             </li>
             <li>
-              <a class="transition hover:text-gray-700" href="/"> À propos </a>
+              <RouterLink class="transition hover:text-gray-700" to="/"> À propos </RouterLink>
             </li>
           </ul>
         </nav>
