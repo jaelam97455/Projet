@@ -6,14 +6,12 @@ import logoLong from "./icons/logoLong.vue";
 
 <template>
   <header aria-label="Header" class="mt-5 bg-white">
-    <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8">
+    <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto md:px-6 lg:px-8">
       <logoLong />
-      <a class="flex items-center justify-center w-12 h-12 text-sm text-white bg-indigo-600 rounded-full"
-        href="/">Logo</a>
 
-      <div class="flex items-center justify-end flex-1 md:justify-between">
+      <div class="flex items-center justify-end flex-1 gap-10">
         <nav aria-label="Site Nav" class="hidden md:block">
-          <ul class="flex items-center gap-6 text-sm text-gray-500">
+          <ul class="items-center hidden gap-6 text-sm text-gray-500 lg:flex">
             <li>
               <a class="transition hover:text-gray-700" href="/"> Nos produits </a>
             </li>
@@ -29,19 +27,16 @@ import logoLong from "./icons/logoLong.vue";
           </ul>
         </nav>
 
-        <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
-            <a class="block rounded-md bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-indigo-700"
-              href="/"> Login </a>
-
+        <div class="flex items-center">
+          <div class="md:flex md:gap-4">
             <li>
-              <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-600 transition hover:fill-lightgreen sm:block"
+              <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-600 transition hover:fill-lightgreen md:block"
                 href="/">
                 <user />
               </a>
             </li>
             <li>
-              <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-600 transition hover:text-indigo-600/75 sm:block"
+              <a class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-indigo-600 transition hover:text-indigo-600/75 md:block"
                 href="/">
                 <shoppingBag />
               </a>
