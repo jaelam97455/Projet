@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
 import CagetteCard from '@/components/CagetteCard.vue';
+import CounterBox from '@/components/CounterBox.vue'
 </script>
 <template>
     <Hero title="Prenez goût à l'anti-gaspi, 
@@ -28,4 +29,5 @@ import CagetteCard from '@/components/CagetteCard.vue';
                 name6="2kg | Poires" name7="0.5kg | Oignons" name8="2kg | Pommes" name9="2kg | Concombres" />
         </div>
     </section>
+    <CounterBox />
 </template>
