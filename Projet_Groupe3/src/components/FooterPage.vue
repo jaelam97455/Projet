@@ -18,7 +18,7 @@ import instagram from '@/components/icons/instagram.vue'
                             <li class="font-sans text-sm text-white">FRANCE</li>
                         </ul>
                     </div>
-                    <div class="flex gap-4">
+                    <div class="flex gap-4 mt-2">
                         <a href="#">
                             <facebook />
                         </a>
