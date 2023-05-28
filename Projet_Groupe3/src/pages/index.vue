@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
 import CagetteCard from '@/components/CagetteCard.vue';
-import CounterBox from '@/components/CounterBox.vue'
+import CounterBox from '@/components/CounterBox.vue';
+import CardEtape from '@/components/CardEtape.vue';
 </script>
 <template>
     <Hero title="Prenez goût à l'anti-gaspi, 
@@ -30,4 +31,11 @@ import CounterBox from '@/components/CounterBox.vue'
         </div>
     </section>
     <CounterBox />
+            <div class="flex flex-col justify-center gap-4 mx-4 my-8">
+                <img src="../../public/img/illu-panier.webp" alt="panier de légumes" class="max-w-[54px] m-auto">
+                <h2 class="text-4xl font-bold text-center">Composez votre cagette !</h2>
+                <p class="text-center">Légumes de saison, fruits rouges... Vous souhaitez un produit bien particulier&nbsp;?</p>
+            </div>
+            
+            <CardEtape/>
 </template>
