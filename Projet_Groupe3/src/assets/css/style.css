@@ -40,7 +40,13 @@ ul, li {
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
+.shopping-bag-svg path {
+  transition: stroke 0.3s ease-in-out;
+}
 
+.shopping-bag-svg:hover path {
+  stroke:#4aad52;
+}
 
 
 @layer components {

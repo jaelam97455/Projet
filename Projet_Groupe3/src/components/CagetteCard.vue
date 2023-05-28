@@ -46,7 +46,7 @@ function containsFruit(name: string): boolean {
             <p class="font-serif text-2xl font-bold text-center text-black lg:text-3xl">
                 {{ price }}
             </p>
-            <shoppingBag />
+            <shoppingBag class="hover:stroke-lightgreen"/>
         </div>
     </div>
 </template>
