@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup lang="ts">
 import Hero from '@/components/Hero.vue'
 import CagetteCard from '@/components/CagetteCard.vue';
@@ -58,3 +59,7 @@ import CardEtape from '@/components/CardEtape.vue';
                     FAIRE UN DON</RouterLink>
     </div>
 </template>
+=======
+<script></script>
+<template></template>
+>>>>>>> origin/master

@@ -27,7 +27,11 @@ function closeMenu() {
       <nav aria-label="Site Nav"
         class="fixed inset-0 invisible w-screen h-screen text-2xl transition-all duration-300 ease-in-out bg-white opacity-0 lg:bg-opacity-0 md:block lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:opacity-100"
         :class="{ '!visible opacity-100': activeMenu }" v-scroll-lock="activeMenu">
+<<<<<<< HEAD
         <ul class="items-center text-sm text-black lg:flex-row mt-[10vh] text-center lg:m-0 flex-col flex">
+=======
+        <ul class="items-center gap-4 text-sm text-black lg:flex-row mt-[10vh] text-center lg:m-0 flex-col flex">
+>>>>>>> origin/master
           <li class="menu-item">
             <RouterLink @click="closeMenu" class="menu-link" to="/"> Nos produits
             </RouterLink>
@@ -45,12 +49,20 @@ function closeMenu() {
           </li>
           <li class="mt-10 menu-item">
             <RouterLink @click="closeMenu"
+<<<<<<< HEAD
               class="text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">S'inscrire
+=======
+              class="inline text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">S'inscrire
+>>>>>>> origin/master
             </RouterLink>
           </li>
           <li class="menu-item">
             <RouterLink @click="closeMenu"
+<<<<<<< HEAD
               class="text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">Se
+=======
+              class="inline text-3xl border-2 border-solid rounded-full menu-link lg:hidden text-orange" to="/">Se
+>>>>>>> origin/master
               connecter
             </RouterLink>
           </li>
