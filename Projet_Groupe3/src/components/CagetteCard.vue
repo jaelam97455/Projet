@@ -23,10 +23,10 @@ function containsFruit(name: string): boolean {
 </script>
 
 <template>
-    <div class="flex flex-col items-center overflow-hidden bg-white rounded-xl shadow-1 gap-4 m-[5vw]">
+    <div class="flex flex-col items-center overflow-hidden bg-white rounded-xl shadow-1 gap-4 m-[5vw] max-w-[330px]">
         <div class="relative flex flex-col items-center self-stretch justify-start overflow-hidden rounded-t-xl bg-darkgreen"
             :class="{ 'bg-darkgreen': title !== 'Abonnement Light', 'bg-orange': title === 'Abonnement Light' }">
-            <p class="font-serif text-2xl font-bold text-center text-white">{{ title }}
+            <p class="font-serif text-2xl font-bold text-center text-white lg:text-3xl">{{ title }}
             </p>
         </div>
         <div
@@ -38,12 +38,12 @@ function containsFruit(name: string): boolean {
             <div v-for="name in [name1, name2, name3, name4, name5, name6, name7, name8, name9]" :key="name"
                 class="relative flex items-center justify-center m-1 rounded-lg"
                 :class="{ 'bg-darkgreen': !containsFruit(name), 'bg-orange': containsFruit(name) }">
-                <p class="text-base text-center text-white btn-cagette-card">{{ name }}</p>
+                <p class="text-sm text-center text-white lg:text-base btn-cagette-card">{{ name }}</p>
             </div>
         </div>
 
         <div class="relative flex items-center self-stretch justify-between px-[3vh] mb-4">
-            <p class="font-serif text-2xl font-bold text-center text-black">
+            <p class="font-serif text-2xl font-bold text-center text-black lg:text-3xl">
                 {{ price }}
             </p>
             <shoppingBag />
