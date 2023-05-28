@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-    <div class="flex flex-col items-center overflow-hidden bg-white rounded-xl shadow-1 px-[2vh] gap-4">
+    <div class="flex flex-col items-center overflow-hidden bg-white rounded-xl shadow-1 gap-4 m-[5vw]">
         <div
             class="relative flex flex-col items-center self-stretch justify-start overflow-hidden rounded-t-xl bg-darkgreen">
             <p class="font-serif text-2xl font-bold text-center text-white">{{ title }}
@@ -59,7 +59,7 @@ defineProps<{
 
         </div>
 
-        <div class="relative flex items-center self-stretch justify-between px-[3vh]">
+        <div class="relative flex items-center self-stretch justify-between px-[3vh] mb-4">
             <p class="font-serif text-2xl font-bold text-center text-black">
                 {{ price }}
             </p>
