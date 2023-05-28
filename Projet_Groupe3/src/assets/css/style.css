@@ -33,4 +33,7 @@ ul, li {
   .menu-link {
     @apply block px-5 lg:py-8;
   }
+  .btn-cagette-card {
+    @apply px-2 py-1;
+  }
 }
